@@ -12,4 +12,4 @@ const findIntersection = (arr1, arr2) => {
   return arr3;
 }
 
-console.log(findIntersection([3,4,1,2], [5,6,1,4])); // [4,1] [1,4]
+findIntersection([3,4,1,2], [5,6,1,4]); // [4,1]
