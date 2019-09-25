@@ -7,7 +7,7 @@ const digits = (arr) => {
   return String(arr).split('').map(x => Number(x));
 }
 
-// Find the largest sum elements in an array.
+// Find the largest sum of adjacent elements in an array.
 const subarray = (arr) => {
   let accumulator = 0;
   let largest = Number.NEGATIVE_INFINITY;
@@ -20,3 +20,16 @@ const subarray = (arr) => {
 }
 
 subarray([-2, 1, -3, 4, 3, -2, 1, -5, 4]); // 7
+
+// Find the largest sum of two adjacent elements in an array.
+const twos = (arr) => {
+  let largest = Number.NEGATIVE_INFINITY;
+  
+  for (let i = 0, l = arr.length - 1; i < l; i++) {
+    let current = arr[i] + arr[i + 1];
+    largest = Math.max(current, largest);
+  }
+  return largest;
+}
+
+twos([-2, 1,-3, 4, 3,-2, 1,-5, 4, 4]); // 8
