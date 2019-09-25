@@ -7,6 +7,8 @@ const digits = (arr) => {
   return String(arr).split('').map(x => Number(x));
 }
 
+digits(1234); // [1, 2, 3, 4]
+
 // Find the largest sum of adjacent elements in an array.
 const subarray = (arr) => {
   let accumulator = 0;
