@@ -17,14 +17,14 @@ const mocha = new Mocha();
  * @return {number}
  */
 const tidepool = (blocks) => {
-  let len = blocks.length;
+  const len = blocks.length;
   let leftWall = blocks[0];
   let rightWall = blocks[len - 1];
 
   // Find the amount of water from the left.
   const left = blocks.map((block) => {
     leftWall = Math.max(leftWall, block);
-    
+
     if (leftWall > block) {
       return leftWall - block;
     }
@@ -35,7 +35,7 @@ const tidepool = (blocks) => {
   // intersection of the right and left.
   return blocks.reduceRight((water, block, idx) => {
     rightWall = Math.max(rightWall, block);
-    
+
     if (rightWall > block) {
       let puddle = rightWall - block;
 
@@ -56,4 +56,3 @@ describe('The tidepool() function', () => {
     assert.equal(tidepool([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]), 6);
   });
 });
-
