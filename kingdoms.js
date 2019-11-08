@@ -16,4 +16,4 @@ const bombs = (num, arr) => {
   return count;
 }
 
-bombs(3, [[1, 3], [2, 5], [6, 9]]);
+bombs(3, [[1, 3], [2, 5], [6, 9]]); // 2
