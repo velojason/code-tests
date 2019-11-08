@@ -1,7 +1,3 @@
-// Create a function to abbreviate a string down
-// to its first letter, last letter, and length of the remaining string.
-// It should also 
-
 /***
  * Implement an abbreviate() function.
  * It should abbreviate words in the following format:
