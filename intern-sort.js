@@ -34,5 +34,5 @@ const internSort = (array) => {
     return mergeSort(array);
 };
 
-// internSort([9,6,7,4,7,2,2,4,2,3,7,7]);
-// internSort([11,5,6,7,2,4,6,-3,-2,1]);
+internSort([9,6,7,4,7,2,2,4,2,3,7,7]);
+internSort([11,5,6,7,2,4,6,-3,-2,1]);

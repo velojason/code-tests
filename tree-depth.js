@@ -1,5 +1,4 @@
 const depth = (tree) => {
-  // Type your solution here
   const len = tree.length;
 
   if(len === 0 || len === 1) {
@@ -22,5 +21,5 @@ const depth = (tree) => {
 
 };
 
-// depth([1,2,3]);
+depth([1,2,3]);
 depth([1,2,3,4,-1,-1,-1]);
