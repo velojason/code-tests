@@ -1,13 +1,13 @@
 // Find the intersection of two arrays.
 const findIntersection = (arr1, arr2) => {
-  let arr3 = [];
   const dict = arr2.reduce((obj, val) => { return {[val]: true, ...obj} }, {});
   
-  arr1.forEach(item => {
+  const arr3 = arr1.reduce((arr, item) => {
     if (dict[item] === true) {
-      arr3.push(item);
+      return [...arr, item];
     }
-  });
+    return arr;
+  }, []);
   
   return arr3;
 }
